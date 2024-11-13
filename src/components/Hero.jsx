@@ -28,7 +28,7 @@ const Hero = ({ onExploreClick }) => {
     <Box bg="#2A2F48" py="10" px="6">
       <VStack spacing="6" maxW="1200px" mx="auto" textAlign="center">
         {/* Slogan */}
-        <Heading fontSize="3xl" fontWeight="bold" color="#2D2D42" color="white">
+        <Heading fontSize="3xl" fontWeight="bold" color="white">
           EMPOWER THE NEXT GENERATION OF NEPALI PROGRAMMERS
         </Heading>
 
