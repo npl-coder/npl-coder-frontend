@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import { motion } from 'framer-motion'
 import Hero from "../components/Hero";
@@ -16,12 +16,12 @@ const HomePage = () => {
     }
   };
   return (
-      <Box>
+    <Flex direction="column" minHeight="100vh">
         <Navbar />
         <Hero onExploreClick={handleExploreClick} />
         {/* <Bio ref={targetRef} /> */}
         <Footer />
-      </Box>
+    </Flex>
   );
 };
 
