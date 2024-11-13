@@ -9,7 +9,7 @@ import UpcomingEventsPage from './Pages/UpcommingEventsPage';
 const App = () => {
   return (
     <ChakraProvider>
-      <BrowserRouter>
+      <BrowserRouter >
         <TransitionProvider>
           <Box>
             <AnimatedRoutes />
