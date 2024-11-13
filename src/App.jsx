@@ -9,7 +9,7 @@ import UpcomingEventsPage from './Pages/UpcommingEventsPage';
 const App = () => {
   return (
     <ChakraProvider>
-      <BrowserRouter >
+      <BrowserRouter basename="/npl-coder-frontend/">
         <TransitionProvider>
           <Box>
             <AnimatedRoutes />
