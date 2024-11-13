@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Link, VStack, Icon } from "@chakra-ui/react";
+import { Box, Heading, Text, Link, VStack, Icon, Flex } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { FiTrendingUp } from "react-icons/fi"; // Example icon for the chart/scale icon
 
@@ -9,6 +9,7 @@ function InfoCard({ title, des, link, time }) {
       borderRadius="md"
       boxShadow="xl" // Shadow to create a nice drop shadow effect
       p="6"
+      display="flex"
       maxW="sm"
       textAlign="start"
       transition="transform 0.2s ease"
@@ -27,9 +28,11 @@ function InfoCard({ title, des, link, time }) {
         </Heading>
 
         {/* Description */}
-        <Text fontSize="sm" color="gray.600">
-          {des}
-        </Text>
+        <Box flex="1">
+          <Text fontSize="sm" color="gray.600">
+            {des}
+          </Text>
+        </Box>
 
         <Text fontWeight="bold" fontSize="sm" color="#2D2D42">
           {time}

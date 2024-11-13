@@ -38,12 +38,17 @@ const Hero = ({ onExploreClick }) => {
     >
       <VStack spacing="6" mx="auto" textAlign="center">
         {/* Slogan */}
-        <Heading fontSize="3xl" fontWeight="bold" color="white">
+        <Heading
+          fontSize="3xl"
+          fontWeight="bold"
+          color="white"
+          animation={`${fadeIn} 1.5s ease-in-out`}
+        >
           EMPOWER THE NEXT GENERATION OF NEPALI PROGRAMMERS
         </Heading>
 
         {/* Supporting Text */}
-        <Text fontSize="lg" color="gray.400" maxW="600px" align="left">
+        <Text fontSize="lg" color="gray.400" maxW="600px" align="left" animation={`${fadeIn} 1.5s ease-in-out`}>
           NPLCoder has two initiatives aimed at fostering technological skills
           among students in Nepal.
         </Text>
@@ -54,6 +59,7 @@ const Hero = ({ onExploreClick }) => {
           justify="center"
           gap="6"
           align="stretch" // Ensures all cards have the same height
+          animation={`${fadeIn} 2.5s ease-in-out`}
         >
           {actionCards.map((card, index) => (
             <InfoCard
