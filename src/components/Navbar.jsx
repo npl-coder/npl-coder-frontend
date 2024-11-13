@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <Flex as="nav" p="4" align="center" boxShadow="sm" bg="#2c3043">
-      <Link href="/" mr="8">
+      <Link as={RouterLink} to="/" mr="8">
         <Image
           src={logo}
           alt="Description of image"
