@@ -40,7 +40,7 @@ function InfoCard({ title, des, link, time }) {
 
         {/* Link */}
         <Link
-          href={link}
+          to={link}
           color="green.400"
           fontWeight="medium"
           fontSize="sm"
