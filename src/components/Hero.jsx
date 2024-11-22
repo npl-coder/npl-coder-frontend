@@ -83,14 +83,14 @@ const actionCards = [
     description:
       "The National Olympiad in Informatics (NOI) is an inaugural programming competition open to secondary school and junior college students across Nepal. The competition consists of an online qualification round followed by a final contest for top performers. Participants will solve algorithmic problems that test their programming and problem-solving abilities. The NOI aims to promote interest in informatics and computational thinking. High-achieving students may receive medals and awards, and outstanding performers could be selected for further training with the possibility of representing Nepal at the International Olympiad in Informatics (IOI). Visit this page to learn more and sign up.",
     commitment: "8-12 hours per week",
-    link: "#",
+    link: "k12.nplcoder.org",
   },
   {
     title: "Nepal Data Challenge",
     description:
       "The Nepal Data Challenge is a program for university students interested in AI and ML. It focuses on collaboration, mentorship, and professional development. Participants can work individually or in teams of up to four members to tackle data-driven projects. The challenge encourages building professional networks and emphasizes inclusivity and support among participants. Prizes are awarded to top teams based on technical excellence, innovation, and collaborative efforts, with a total prize pool of $1,000. Visit this page to learn more and sign up.",
     commitment: "8-12 hours per week",
-    link: "#",
+    link: "uni.nplcoder.org",
   },
 ];
 
