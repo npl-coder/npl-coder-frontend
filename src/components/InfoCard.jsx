@@ -40,7 +40,8 @@ function InfoCard({ title, des, link, time }) {
 
         {/* Link */}
         <Link
-          to={link}
+          href={`https://${link}`}
+          isExternal
           color="green.400"
           fontWeight="medium"
           fontSize="sm"
