@@ -37,7 +37,7 @@ const Navbar = () => {
     { name: "NOI", path: "https://k12.nplcoder.org/" },
     { name: "NDC", path: "https://uni.nplcoder.org/" },
     { name: "Upcoming Events", path: "/upcomingevents" },
-    { name: "Our Team", path: "#" },
+    { name: "Our Team", path: "/team" },
     { name: "About Us", path: "#" },
     { name: "Goals", path: "#" },
   ];

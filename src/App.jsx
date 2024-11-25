@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-ro
 import { AnimatePresence } from 'framer-motion';
 import { TransitionProvider, useTransition } from './context/TransitionContext';
 import HomePage from './Pages/HomePage';
-import GalleryPage from './Pages/GalleryPage';
 import UpcomingEventsPage from './Pages/UpcommingEventsPage';
+import TeamPage from './Pages/TeamPage';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const AnimatedRoutes = () => {
   // Updated transition direction based on navigation
   const handleNavigation = (path) => {
     const currentPath = location.pathname;
-    const paths = ['/', '/gallery', '/upcomingevents'];
+    const paths = ['/', '/team', '/upcomingevents'];
     const currentIndex = paths.indexOf(currentPath);
     const targetIndex = paths.indexOf(path);
     
@@ -44,7 +44,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<HomePage onNavigate={handleNavigation} />} />
-        <Route path="/gallery" element={<GalleryPage onNavigate={handleNavigation} />} />
+        <Route path="/team" element={<TeamPage onNavigate={handleNavigation} />} />
         <Route path="/upcomingevents" element={<UpcomingEventsPage onNavigate={handleNavigation} />} />
       </Routes>
     </AnimatePresence>

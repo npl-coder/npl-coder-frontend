@@ -18,16 +18,16 @@ const Footer = () => {
         {/* Left Section */}
         <Flex gap="8" align="center">
         <Text>&copy; {new Date().getFullYear()} The NPLCoder Project. All rights reserved.</Text>
-        <Link href="#" fontSize="sm" color="gray.300" _hover={{ color: 'white' }}>
+        {/* <Link href="#" fontSize="sm" color="gray.300" _hover={{ color: 'white' }}>
             Terms and Conditions
           </Link>
           <Link href="#" fontSize="sm" color="gray.300" _hover={{ color: 'white' }}>
             Privacy and Policy
-          </Link>
+          </Link> */}
         </Flex>
 
         {/* Right Section */}
-        <Flex gap="4" align="center">
+        {/* <Flex gap="4" align="center">
         <IconButton
           as="a"
           href="#"
@@ -88,7 +88,7 @@ const Footer = () => {
           variant="ghost"
           fontSize="2xl"
         />
-        </Flex>
+        </Flex> */}
 
       </Flex>
 
