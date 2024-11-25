@@ -34,9 +34,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "NOI", path: "#" },
-    { name: "NDC", path: "#" },
-    { name: "Upcoming Events", path: "#" },
+    { name: "NOI", path: "https://k12.nplcoder.org/" },
+    { name: "NDC", path: "https://uni.nplcoder.org/" },
+    { name: "Upcoming Events", path: "/upcomingevents" },
     { name: "Our Team", path: "#" },
     { name: "About Us", path: "#" },
     { name: "Goals", path: "#" },

@@ -1,33 +1,49 @@
-import { Box, Flex, Text, VStack } from "@chakra-ui/react";
+import { Box, Text, SimpleGrid, Button } from "@chakra-ui/react"
+import SectionLayout from "./SectionLayout"
+
+const events = [
+  {
+    id: 1,
+    title: "Nepal Data Challenge",
+    date: "TBD",
+    description: "Nepal's largest data science competition, with cash prizes and internships for the winners."
+  },
+  {
+    id: 2,
+    title: "NOI Orientation Sessions",
+    date: "TBD",
+    description: "Orientation sessions for the Nepal Olympiad in Informatics, the national programming competition."
+  },
+  {
+    id: 3,
+    title: "NOI BootCamp",
+    date: "TBD",
+    description: "A 12-week bootcamp for the top 30 students from the Nepal Olympiad in Informatics."
+  }
+]
 
 const Events = () => {
   return (
-    <Flex align="center" justify="center" minH="87vh">
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        height="300px"
-        bg="#f0f0f3"
-        borderRadius="15px"
-        boxShadow="10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff"
-        p={6}
-        mx="auto"
-        mt={8}
-        mb={80}
-        maxW="400px"
-      >
-        <VStack spacing={5}>
-          <Text fontSize="2xl" fontWeight="bold" color="gray.700">
-            Stay Tuned!
-          </Text>
-          <Text fontSize="md" color="gray.500">
-            More events are coming soon.
-          </Text>
-        </VStack>
-      </Box>
-    </Flex>
-  );
-};
+    <SectionLayout title="Upcoming Events">
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
+        {events.map((event) => (
+          <Box key={event.id} bg="white" p={6} borderRadius="md" boxShadow="md">
+            <Text fontWeight="bold" fontSize="xl" mb={2}>
+              {event.title}
+            </Text>
+            <Text color="gray.600" mb={2}>
+              {event.date}
+            </Text>
+            <Text mb={4}>{event.description}</Text>
+            <Button colorScheme="blue" size="sm">
+              Learn More
+            </Button>
+          </Box>
+        ))}
+      </SimpleGrid>
+    </SectionLayout>
+  )
+}
 
-export default Events;
+export default Events
+

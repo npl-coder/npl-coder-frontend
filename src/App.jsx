@@ -28,7 +28,7 @@ const AnimatedRoutes = () => {
   // Updated transition direction based on navigation
   const handleNavigation = (path) => {
     const currentPath = location.pathname;
-    const paths = ['/', '/gallery', '/upcommingevents'];
+    const paths = ['/', '/gallery', '/upcomingevents'];
     const currentIndex = paths.indexOf(currentPath);
     const targetIndex = paths.indexOf(path);
     
@@ -45,7 +45,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<HomePage onNavigate={handleNavigation} />} />
         <Route path="/gallery" element={<GalleryPage onNavigate={handleNavigation} />} />
-        <Route path="/upcommingevents" element={<UpcomingEventsPage onNavigate={handleNavigation} />} />
+        <Route path="/upcomingevents" element={<UpcomingEventsPage onNavigate={handleNavigation} />} />
       </Routes>
     </AnimatePresence>
   );

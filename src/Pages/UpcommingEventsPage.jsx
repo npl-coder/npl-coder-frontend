@@ -1,15 +1,15 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Events from '../components/Events'
-import { Box } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 
 const UpcommingEventsPage = () => {
   return (
-    <Box>
+    <Flex direction="column" minHeight="100vh">
         <Navbar/>
         <Events/>
         <Footer/>
-    </Box>
+    </Flex>
   )
 }
 
