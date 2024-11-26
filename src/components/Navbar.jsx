@@ -38,8 +38,8 @@ const Navbar = () => {
     { name: "NDC", path: "https://uni.nplcoder.org/" },
     { name: "Upcoming Events", path: "/upcomingevents" },
     { name: "Our Team", path: "/team" },
-    { name: "About Us", path: "#" },
-    { name: "Goals", path: "#" },
+    { name: "About Us", path: "/about" },
+    { name: "Goals", path: "/goals" },
   ];
 
   return (

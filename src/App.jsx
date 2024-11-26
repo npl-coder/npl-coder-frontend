@@ -5,6 +5,8 @@ import { TransitionProvider, useTransition } from './context/TransitionContext';
 import HomePage from './Pages/HomePage';
 import UpcomingEventsPage from './Pages/UpcommingEventsPage';
 import TeamPage from './Pages/TeamPage';
+import AboutUsPage from './Pages/AboutUsPage';
+import GoalsPage from './Pages/GoalsPage';
 
 const App = () => {
   return (
@@ -28,7 +30,7 @@ const AnimatedRoutes = () => {
   // Updated transition direction based on navigation
   const handleNavigation = (path) => {
     const currentPath = location.pathname;
-    const paths = ['/', '/team', '/upcomingevents'];
+    const paths = ['/', '/team', '/upcomingevents', '/about'];
     const currentIndex = paths.indexOf(currentPath);
     const targetIndex = paths.indexOf(path);
     
@@ -46,6 +48,8 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<HomePage onNavigate={handleNavigation} />} />
         <Route path="/team" element={<TeamPage onNavigate={handleNavigation} />} />
         <Route path="/upcomingevents" element={<UpcomingEventsPage onNavigate={handleNavigation} />} />
+        <Route path="/about" element={<AboutUsPage onNavigate={handleNavigation} />} />
+        <Route path="/goals" element={<GoalsPage onNavigate={handleNavigation} />} />
       </Routes>
     </AnimatePresence>
   );

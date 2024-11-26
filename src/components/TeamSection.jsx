@@ -1,31 +1,47 @@
-import { Box, Heading, SimpleGrid, Image, Text, Button, Link, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  SimpleGrid,
+  Image,
+  Text,
+  Button,
+  Link,
+  VStack,
+} from "@chakra-ui/react";
 import { FaLinkedin } from "react-icons/fa";
 import SectionLayout from "./SectionLayout";
+import Ayushma from "../assets/images/Aayushma.jpeg";
+import Manish from "../assets/images/ManishAcharya.jpg";
+import Aashish from "../assets/images/Aashish.jpeg";
+import Aditi from "../assets/images/aditi.jpeg";
+import Amrit from "../assets/images/Amrit.jpeg";
+import Raul from "../assets/images/Raul.jpeg";
 
 const teamMembers = [
   {
-    name: "Manish Acharya",
-    title: "Incoming Freshman @ Vanderbilt University || Chancellor's Scholar || Computerphile. AI Enthusiast",
-    image: "./images/ManishAcharya.jpg",
-    linkedin: "https://www.linkedin.com/in/manishacharya60/",
-  },
-  {
-    name: "Aashish Karki",
-    title: "Computer Engineering Student at IOE, Pulchowk Campus",
-    image: "./images/AashishKarki.jpg",
-    linkedin: "https://www.linkedin.com/in/aashish-karki-718757233/",
-  },
-  {
     name: "Aditi Gajurel",
-    title: "Southern Illinois University Edwardsville",
-    image: "./images/RiwazPoudel.png",
-    linkedin: "https://www.linkedin.com/in/riwaz-poudel-957467207",
+    title: "University of Southern California",
+    image: Aditi,
+    linkedin: "https://www.linkedin.com/in/aditi-gajurel-334492146/",
   },
   {
     name: "Aayushma Sapkota",
     title: "Stanford University | CS + MS&E | QuestBridge",
-    image: "../assets/images/Aayushma.jpeg",
+    image: Ayushma,
     linkedin: "https://np.linkedin.com/in/suraj-pathak-aa8035238",
+  },
+  {
+    name: "Manish Acharya",
+    title:
+      "Vanderbilt University || Chancellor's Scholar || Computerphile. AI Enthusiast",
+    image: Manish,
+    linkedin: "https://www.linkedin.com/in/manishacharya60/",
+  },
+  {
+    name: "Aashish Karki",
+    title: "IOE, Pulchowk Campus || AI Fellow '24 @Fusemachines || APIE",
+    image: Aashish,
+    linkedin: "https://www.linkedin.com/in/aashish-karki-718757233/",
   },
   {
     name: "Amod Paudel",
@@ -35,39 +51,34 @@ const teamMembers = [
   },
   {
     name: "Mahesh",
-    title: "Computer Engineering Student at IOE, Pulchowk Campus",
+    title: "",
     image: "./images/AnishSapkota.jpeg",
     linkedin: "https://www.linkedin.com/in/anish-sapkota-15170016b/",
   },
   {
-    name: "Rahul Jha",
-    title: "Computer Engineering Student at IOE, Pulchowk Campus",
-    image: "./images/RahjulJha.jpg",
-    linkedin: "https://www.linkedin.com/in/jharahul968/",
+    name: "Sujit Maharjan",
+    title: "PhD Student in Computer Science, University of Texas at Arlington",
+    image: "https://maharjansujit.com.np/images/avatar.jpg",
+    linkedin: "https://maharjansujit.com.np",
   },
   {
-    name: "Saksham Gurung",
-    title: "CS at UW-Madison",
-    image: "./images/SakshamGurung.jpg",
-    linkedin: "https://www.linkedin.com/in/saksham-gurung-292732191/",
+    name: "Amrit Kandel",
+    title: "Advisor",
+    image: Amrit,
+    linkedin: "https://www.linkedin.com/in/amritkandel/",
   },
   {
-    name: "Shaleen Baral",
-    title: "Rising Sophomore at Cornell University",
-    image: "./images/60111.jpg",
-    linkedin: "https://www.linkedin.com/in/shaleen-baral-379477175/",
-  },
-  {
-    name: "Jivan Kharel",
-    title: "Software Engineer at Deloitte @ Meta | Full Stack Engineer | Backend Engineer",
-    image: "./images/JivanKharel.jpeg",
-    linkedin: "https://www.linkedin.com/in/jivan-kharel-0480b3a4/",
+    name: "Raul Aguilera",
+    title: "Advisor",
+    image: Raul,
+    linkedin: "https://www.linkedin.com/in/aguilera-avenue/",
   },
 ];
 
 const TeamMemberCard = ({ name, title, image, linkedin }) => (
   <Box
     maxW="300px"
+    bg="white"
     textAlign="center"
     fontFamily="arial"
     p={6}
@@ -88,7 +99,7 @@ const TeamMemberCard = ({ name, title, image, linkedin }) => (
     >
       <Image src={image} alt={name} w="100%" h="100%" objectFit="cover" />
     </Box>
-    <Heading as="h3" size="md" mb={2}>
+    <Heading color="black" as="h3" size="md" mb={2}>
       {name}
     </Heading>
     <Text color="gray.600" fontSize="14px" h="50px" mb={4}>
@@ -102,7 +113,7 @@ const TeamMemberCard = ({ name, title, image, linkedin }) => (
         pointerEvents="none"
         transition="all 500ms ease"
       >
-        <FaLinkedin size={24} />
+        <FaLinkedin color="black" size={24} />
       </Link>
       <Button
         as="a"
@@ -119,19 +130,21 @@ const TeamMemberCard = ({ name, title, image, linkedin }) => (
 );
 
 const TeamSection = () => (
-  <SectionLayout title="Meet our team">
+  <SectionLayout title="Meet our team" bgColor="#2A2F48" txtColor="white">
     <SimpleGrid
       columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
       spacing={6}
-      justifyItems="center"
+      justifyContent="space-evenly"
     >
       {teamMembers.map((member) => (
-        <TeamMemberCard key={member.name} {...member} />
+        <TeamMemberCard
+          key={member.name}
+          {...member}
+          // Need to improve the layout so that the remaining card gets center aligned
+        />
       ))}
     </SimpleGrid>
   </SectionLayout>
 );
 
 export default TeamSection;
-
-

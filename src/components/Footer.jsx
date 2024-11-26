@@ -2,6 +2,8 @@ import { Box, Text, IconButton, HStack, Icon, Flex } from '@chakra-ui/react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaXTwitter, FaDiscord } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
+
+
 const Footer = () => {
   return (
     <Box bg="#1A1A1A" color="white" py="4" textAlign="center" mt="auto">
@@ -10,13 +12,14 @@ const Footer = () => {
         maxW="1200px"
         mx="auto"
         px="6"
-        justify="space-between"
+        justify="center"
         align="center"
         direction={{ base: 'column', md: 'row' }}
         gap={{ base: 4, md: 0 }}
       >
+        <Flex align="center" justifyContent="center" textAlign="center">
         {/* Left Section */}
-        <Flex gap="8" align="center">
+        {/* <Flex gap="8" align="center" justifyContent="center"> */}
         <Text>&copy; {new Date().getFullYear()} The NPLCoder Project. All rights reserved.</Text>
         {/* <Link href="#" fontSize="sm" color="gray.300" _hover={{ color: 'white' }}>
             Terms and Conditions
@@ -24,6 +27,7 @@ const Footer = () => {
           <Link href="#" fontSize="sm" color="gray.300" _hover={{ color: 'white' }}>
             Privacy and Policy
           </Link> */}
+          </Flex>
         </Flex>
 
         {/* Right Section */}
@@ -90,7 +94,7 @@ const Footer = () => {
         />
         </Flex> */}
 
-      </Flex>
+      {/* </Flex> */}
 
       
       <HStack spacing={4} justify="center" mt={2}>

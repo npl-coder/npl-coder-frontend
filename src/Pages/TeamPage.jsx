@@ -6,7 +6,7 @@ import TeamSection from '../components/TeamSection'
 
 const TeamPage = () => {
   return (
-    <Flex direction="column" minHeight="100vh">
+    <Flex  direction="column" minHeight="100vh">
         <Navbar/>
         <TeamSection/>
         <Footer/>
