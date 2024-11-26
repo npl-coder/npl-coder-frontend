@@ -71,7 +71,7 @@ const Navbar = () => {
               key={item.name}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              transition={{ type: "tween", duration: 0.6, ease: "linear" }}
             >
               <Link
                 as={RouterLink}
