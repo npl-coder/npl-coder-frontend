@@ -131,6 +131,12 @@ const TeamMemberCard = ({ name, title, image, linkedin }) => (
 
 const TeamSection = () => (
   <SectionLayout title="Meet our team" bgColor="#2A2F48" txtColor="white">
+    <Text fontSize="xl" textAlign="center" mb={8}>
+      Our dedicated team consists of college students from the USA and
+      professionals who share a passion for technology and education. Together,
+      we work to bridge the gap between opportunity and talent in Nepal. Add
+      their picture and what they do.
+    </Text>
     <SimpleGrid
       columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
       spacing={6}

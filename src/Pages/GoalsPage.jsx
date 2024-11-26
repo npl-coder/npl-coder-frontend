@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { useRef } from "react";
 import { withPageTransition } from "../context/TransitionContext";
 import { Flex } from "@chakra-ui/react";
+import Goals from "../components/Goals";
 
 const GoalsPage = () => {
   const targetRef = useRef(null);
@@ -16,7 +17,7 @@ const GoalsPage = () => {
   return (
     <Flex direction="column" minHeight="100vh">
         <Navbar />
-        {/* <Hero onExploreClick={handleExploreClick} /> */}
+        <Goals />
         {/* <Bio ref={targetRef} /> */}
         <Footer />
     </Flex>

@@ -99,17 +99,19 @@ const Navbar = () => {
       </Flex>
 
       {/* Register Button */}
-      <Button
-        ml="4"
-        bg="green.300"
-        color="black"
-        _hover={{ bg: "green.400" }}
-        borderRadius="md"
-        px="5"
-        mx="5"
-      >
-        Register
-      </Button>
+      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfA_IjFITxmn4x9udiR1XtZhbNjmxQQ6Dj2tASzptcMvgtPsQ/viewform?pli=1&pli=1">
+        <Button
+          ml="4"
+          bg="green.300"
+          color="black"
+          _hover={{ bg: "green.400" }}
+          borderRadius="md"
+          px="5"
+          mx="5"
+        >
+          Register
+        </Button>
+      </Link>
 
       <Spacer />
 

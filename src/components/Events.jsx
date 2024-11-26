@@ -6,19 +6,22 @@ const events = [
     id: 1,
     title: "Nepal Data Challenge",
     date: "TBD",
-    description: "Nepal's largest data science competition, with cash prizes and internships for the winners."
+    description: "Nepal's largest data science competition, with cash prizes and internships for the winners.",
+    link: "uni.nplcoder.org"
   },
   {
     id: 2,
     title: "NOI Orientation Sessions",
     date: "TBD",
-    description: "Orientation sessions for the Nepal Olympiad in Informatics, the national programming competition."
+    description: "Orientation sessions for the Nepal Olympiad in Informatics, the national programming competition.",
+    link: "k12.nplcoder.org"
   },
   {
     id: 3,
     title: "NOI BootCamp",
     date: "TBD",
-    description: "A 12-week bootcamp for the top 30 students from the Nepal Olympiad in Informatics."
+    description: "A 12-week bootcamp for the top 30 students from the Nepal Olympiad in Informatics.",
+    link: "k12.nplcoder.org"
   }
 ]
 
