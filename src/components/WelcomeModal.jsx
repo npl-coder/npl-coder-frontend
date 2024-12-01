@@ -8,6 +8,7 @@ import {
   Image,
   useDisclosure,
 } from '@chakra-ui/react';
+import CompetitionImage from "../assets/images/Competition.jpeg";
 
 const WelcomeModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,7 +23,7 @@ const WelcomeModal = () => {
       <ModalContent>
         <ModalCloseButton />
         <ModalBody p={0}>
-          <Image src="../../public/Competition.jpeg" alt="Welcome" />
+          <Image src={CompetitionImage} alt="Welcome" />
         </ModalBody>
       </ModalContent>
     </Modal>
