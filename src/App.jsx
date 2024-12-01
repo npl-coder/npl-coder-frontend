@@ -7,6 +7,7 @@ import UpcomingEventsPage from './Pages/UpcommingEventsPage';
 import TeamPage from './Pages/TeamPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import GoalsPage from './Pages/GoalsPage';
+import WelcomeModal from './components/WelcomeModal';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <BrowserRouter >
         <TransitionProvider>
           <Box>
+            <WelcomeModal/>
             <AnimatedRoutes />
           </Box>
         </TransitionProvider>

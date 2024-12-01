@@ -20,7 +20,7 @@ import {
 import { FiMenu } from "react-icons/fi";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import logo from "../assets/nplcoderLogo.svg";
+import logo from "../assets/nplcoderLogo.png";
 
 const Navbar = () => {
   const location = useLocation();
