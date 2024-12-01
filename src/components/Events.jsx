@@ -1,29 +1,32 @@
-import { Box, Text, SimpleGrid, Button } from "@chakra-ui/react"
-import SectionLayout from "./SectionLayout"
+import { Box, Text, SimpleGrid, Button, Link } from "@chakra-ui/react";
+import SectionLayout from "./SectionLayout";
 
 const events = [
+  {
+    id: 2,
+    title: "Algorithm को श्रीपेच 001",
+    date: "January 4, 2025",
+    description:
+      "This is NPL Coder's most prestigious and intense competitive programming contest, crafted to challenge and inspire the brightest high school and university students across the nation. ",
+    link: "https://www.hackerrank.com/npl-coder",
+  },
   {
     id: 1,
     title: "Nepal Data Challenge",
     date: "TBD",
-    description: "Nepal's largest data science competition, with cash prizes and internships for the winners.",
-    link: "uni.nplcoder.org"
-  },
-  {
-    id: 2,
-    title: "NOI Orientation Sessions",
-    date: "TBD",
-    description: "Orientation sessions for the Nepal Olympiad in Informatics, the national programming competition.",
-    link: "k12.nplcoder.org"
+    description:
+      "Nepal's largest data science competition, with cash prizes and internships for the winners.",
+    link: "uni.nplcoder.org",
   },
   {
     id: 3,
     title: "NOI BootCamp",
     date: "TBD",
-    description: "A 12-week bootcamp for the top 30 students from the Nepal Olympiad in Informatics.",
-    link: "k12.nplcoder.org"
-  }
-]
+    description:
+      "A 12-week bootcamp for the top 30 students from the Nepal Olympiad in Informatics.",
+    link: "k12.nplcoder.org",
+  },
+];
 
 const Events = () => {
   return (
@@ -38,15 +41,20 @@ const Events = () => {
               {event.date}
             </Text>
             <Text mb={4}>{event.description}</Text>
-            <Button colorScheme="blue" size="sm">
-              Learn More
-            </Button>
+            {event.date === "TBD" ? (
+              ""
+            ) : (
+              <Link href={event.link}>
+                <Button colorScheme="blue" size="sm">
+                  Learn More
+                </Button>
+              </Link>
+            )}
           </Box>
         ))}
       </SimpleGrid>
     </SectionLayout>
-  )
-}
+  );
+};
 
-export default Events
-
+export default Events;
