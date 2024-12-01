@@ -22,7 +22,7 @@ const WelcomeModal = () => {
       <ModalContent>
         <ModalCloseButton />
         <ModalBody p={0}>
-          <Image src="/src/assets/images/Competition.jpeg" alt="Welcome" />
+          <Image src="../../public/Competition.jpeg" alt="Welcome" />
         </ModalBody>
       </ModalContent>
     </Modal>
