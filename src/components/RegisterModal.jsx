@@ -13,7 +13,6 @@ import {
   Image,
 } from "@chakra-ui/react";
 import Competition from "../assets/images/Competition.jpeg";
-import { Link } from "react-router-dom";
 
 const RegisterModal = ({ isOpen, onClose }) => {
   return (
@@ -23,34 +22,50 @@ const RegisterModal = ({ isOpen, onClose }) => {
         <ModalHeader>Register</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <HStack spacing={4}>
+          <HStack spacing={4} align="stretch">
+            {/* First Card */}
             <Box
               p={4}
               borderWidth="1px"
               borderRadius="lg"
-              w="50%"
+              flex="1"
               textAlign="center"
+              display="flex"
+              flexDirection="column"
             >
               <Text mb={2}>Algorithm को श्रीपेच 001</Text>
               <Image py={2} src={Competition} />
-              <Link to="https://www.hackerrank.com/npl-coder">
-                <Button colorScheme="red">Register Now</Button>
-              </Link>
+              <Button
+                as="a"
+                href="https://www.hackerrank.com/npl-coder"
+                colorScheme="red"
+                mt="auto"
+              >
+                Register Now
+              </Button>
             </Box>
+            {/* Second Card */}
             <Box
               p={4}
               borderWidth="1px"
               borderRadius="lg"
-              w="50%"
+              flex="1"
               textAlign="center"
-              align="stretch"
+              display="flex"
+              flexDirection="column"
             >
-              <Text mb={2} py={120}>Nepal Data Challenge</Text>
-              <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfA_IjFITxmn4x9udiR1XtZhbNjmxQQ6Dj2tASzptcMvgtPsQ/viewform?pli=1&pli=1">
-              <Button bg="blue.700" color="white" _hover={{ bg: "blue.700" }}>
+              <Text mb={2}>Nepal Data Challenge</Text>
+              {/* Include Image if needed */}
+              <Button
+                as="a"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfA_IjFITxmn4x9udiR1XtZhbNjmxQQ6Dj2tASzptcMvgtPsQ/viewform"
+                bg="blue.700"
+                color="white"
+                _hover={{ bg: "blue.600" }}
+                mt="auto"
+              >
                 Register Now
               </Button>
-              </Link>
             </Box>
           </HStack>
         </ModalBody>
