@@ -140,7 +140,7 @@ const TeamSection = () => (
     <SimpleGrid
       columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
       spacing={6}
-      justifyContent="space-evenly"
+      justifyItems="center"
     >
       {teamMembers.map((member) => (
         <TeamMemberCard

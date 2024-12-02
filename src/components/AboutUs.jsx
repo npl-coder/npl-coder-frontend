@@ -37,10 +37,12 @@ import {
     return (
       <Flex
         py="16"
+        wrap="wrap"
         align="center"
         direction="column"
         justify="center"
         width="100%"
+        textAlign="left"
       >
           {data.map((item, index) => (
             <Box
@@ -48,10 +50,11 @@ import {
               bg="white"
               borderRadius="lg"
               boxShadow="lg"
-              width="50%"
-              p="8"
-              m="10"
+              width="85%"
+              p="2"
+              my="20"
               animation={`${fadeIn} 1.5s ease-in-out`}
+              justifyContent="center"
               position="relative"
               _before={{
                 content: '""',

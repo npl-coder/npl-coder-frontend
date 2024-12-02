@@ -21,6 +21,7 @@ import { FiMenu } from "react-icons/fi";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import logo from "../assets/nplcoderLogo.png";
+import RegisterModal from "./RegisterModal";
 
 const Navbar = () => {
   const location = useLocation();
@@ -30,6 +31,11 @@ const Navbar = () => {
     lg: "280px",
   });
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const {
+    isOpen: isModalOpen,
+    onOpen: onModalOpen,
+    onClose: onModalClose,
+  } = useDisclosure();
   const btnRef = useRef();
 
   const navItems = [
@@ -99,7 +105,6 @@ const Navbar = () => {
       </Flex>
 
       {/* Register Button */}
-      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfA_IjFITxmn4x9udiR1XtZhbNjmxQQ6Dj2tASzptcMvgtPsQ/viewform?pli=1&pli=1">
         <Button
           ml="4"
           bg="green.300"
@@ -108,10 +113,12 @@ const Navbar = () => {
           borderRadius="md"
           px="5"
           mx="5"
+          onClick={onModalOpen}
         >
           Register
         </Button>
-      </Link>
+      {/* Register Modal */}
+      <RegisterModal isOpen={isModalOpen} onClose={onModalClose} />
 
       <Spacer />
 

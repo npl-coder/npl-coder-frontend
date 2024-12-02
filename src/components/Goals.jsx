@@ -50,6 +50,7 @@ import {
               boxShadow="lg"
               p="8"
               m = "10"
+              width="100%"
               animation={`${fadeIn} 1.5s ease-in-out`}
               position="relative"
               _before={{
