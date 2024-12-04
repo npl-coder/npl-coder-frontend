@@ -82,7 +82,7 @@ const Navbar = () => {
               <Link
                 as={RouterLink}
                 to={item.path}
-                fontSize={{ base: "xs", md: "sm" }}
+                fontSize={{md: "xs", lg: "sm" }}
                 textTransform="uppercase"
                 px={2}
                 py={1}
