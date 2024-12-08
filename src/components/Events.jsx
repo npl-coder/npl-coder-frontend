@@ -13,10 +13,10 @@ const events = [
   {
     id: 1,
     title: "Nepal Data Challenge",
-    date: "TBD",
+    date: "January 10, 2025",
     description:
-      "Nepal's largest data science competition, with cash prizes and internships for the winners.",
-    link: "uni.nplcoder.org",
+      "Are you a university student passionate about AI and Machine Learning or Data in general? Join a community built on mentorship, collaboration, and professional growth. Work together to unlock your potential and win exciting cash prize!!!",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfA_IjFITxmn4x9udiR1XtZhbNjmxQQ6Dj2tASzptcMvgtPsQ/viewform?pli=1",
   },
   {
     id: 3,
