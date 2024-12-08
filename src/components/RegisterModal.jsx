@@ -13,6 +13,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import Competition from "../assets/images/Competition.jpeg";
+import NDCCompetition from "../assets/images/NDCCompetition.jpeg";
 
 const RegisterModal = ({ isOpen, onClose }) => {
   return (
@@ -55,7 +56,7 @@ const RegisterModal = ({ isOpen, onClose }) => {
               flexDirection="column"
             >
               <Text mb={2}>Nepal Data Challenge</Text>
-              {/* Include Image if needed */}
+              <Image py={2} src={NDCCompetition} />
               <Button
                 as="a"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfA_IjFITxmn4x9udiR1XtZhbNjmxQQ6Dj2tASzptcMvgtPsQ/viewform"
