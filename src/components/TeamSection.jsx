@@ -16,6 +16,7 @@ import Aashish from "../assets/images/Aashish.jpeg";
 import Aditi from "../assets/images/aditi.jpeg";
 import Amrit from "../assets/images/Amrit.jpeg";
 import Raul from "../assets/images/Raul.jpeg";
+import Sumit from "../assets/images/Sumit.jpeg";
 
 const teamMembers = [
   {
@@ -43,6 +44,11 @@ const teamMembers = [
     image: Aashish,
     linkedin: "https://www.linkedin.com/in/aashish-karki-718757233/",
   },
+  { name: "Sumit Yadav",
+    title: "AI Engineer",
+    image: Sumit,
+    linkedin: "https://www.linkedin.com/in/rockerritesh",
+    },
   // {
   //   name: "Amod Paudel",
   //   title: "Computer Engineering Student at IOE, Pulchowk Campus",
