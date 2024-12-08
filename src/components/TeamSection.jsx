@@ -113,7 +113,7 @@ const TeamMemberCard = ({ name, title, image, linkedin }) => (
         pointerEvents="none"
         transition="all 500ms ease"
       >
-        <FaLinkedin color="black" size={24} />
+        {/* <FaLinkedin color="black" size={24} /> */}
       </Link>
       <Button
         as="a"
