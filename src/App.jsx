@@ -8,6 +8,7 @@ import TeamPage from './Pages/TeamPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import GoalsPage from './Pages/GoalsPage';
 import WelcomeModal from './components/WelcomeModal';
+import RedirectToExternal from './components/RedirectToExternal';
 
 const App = () => {
   return (
@@ -52,6 +53,10 @@ const AnimatedRoutes = () => {
         <Route path="/upcomingevents" element={<UpcomingEventsPage onNavigate={handleNavigation} />} />
         <Route path="/about" element={<AboutUsPage onNavigate={handleNavigation} />} />
         <Route path="/goals" element={<GoalsPage onNavigate={handleNavigation} />} />
+        <Route
+          path="/discord"
+          element={<RedirectToExternal to="https://discord.gg/Hu8Jf4Bxee" />}
+        />
       </Routes>
     </AnimatePresence>
   );
