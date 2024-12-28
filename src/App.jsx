@@ -53,10 +53,7 @@ const AnimatedRoutes = () => {
         <Route path="/upcomingevents" element={<UpcomingEventsPage onNavigate={handleNavigation} />} />
         <Route path="/about" element={<AboutUsPage onNavigate={handleNavigation} />} />
         <Route path="/goals" element={<GoalsPage onNavigate={handleNavigation} />} />
-        <Route
-          path="/discord"
-          element={<RedirectToExternal to="https://discord.gg/Hu8Jf4Bxee" />}
-        />
+        <Route path="/discord" element={<RedirectToExternal to="https://discord.gg/Hu8Jf4Bxee" />}/>
       </Routes>
     </AnimatePresence>
   );
