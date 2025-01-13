@@ -33,8 +33,7 @@ const teamMembers = [
   },
   {
     name: "Manish Acharya",
-    title:
-      "Undergraduate Student, Vanderbilt University",
+    title: "Undergraduate Student, Vanderbilt University",
     image: Manish,
     linkedin: "https://www.linkedin.com/in/manishacharya60/",
   },
@@ -44,22 +43,23 @@ const teamMembers = [
     image: Aashish,
     linkedin: "https://www.linkedin.com/in/aashish-karki-718757233/",
   },
-  { name: "Sumit Yadav",
+  {
+    name: "Mahesh Pandit",
+    title: "Undergraduate Student",
+    image: "https://uunchai.org/assets/img/mahesh.jpg",
+    website: "https://maheshpandit.com.np/",
+  },
+  {
+    name: "Sumit Yadav",
     title: "AI Engineer",
     image: Sumit,
     linkedin: "https://www.linkedin.com/in/rockerritesh",
-    },
+  },
   // {
   //   name: "Amod Paudel",
   //   title: "Computer Engineering Student at IOE, Pulchowk Campus",
   //   image: "./images/PratikDahal.jpg",
   //   linkedin: "https://www.linkedin.com/in/pratik-dahal-430aa21b2/",
-  // },
-  // {
-  //   name: "Mahesh",
-  //   title: "",
-  //   image: "./images/AnishSapkota.jpeg",
-  //   linkedin: "https://www.linkedin.com/in/anish-sapkota-15170016b/",
   // },
   {
     name: "Sujit Maharjan",

@@ -6,6 +6,7 @@ const events = [
     id: 2,
     title: "Algorithm को श्रीपेच 001",
     date: "January 4, 2025",
+    isCompleted: true,
     description:
       "This is NPL Coder's most prestigious and intense competitive programming contest, crafted to challenge and inspire the brightest high school and university students across the nation. ",
     link: "https://www.hackerrank.com/npl-coder",
@@ -14,6 +15,7 @@ const events = [
     id: 1,
     title: "Nepal Data Challenge",
     date: "January 10, 2025",
+    isCompleted: true,
     description:
       "Are you a university student passionate about AI and Machine Learning or Data in general? Join a community built on mentorship, collaboration, and professional growth. Work together to unlock your potential and win exciting cash prize!!!",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfA_IjFITxmn4x9udiR1XtZhbNjmxQQ6Dj2tASzptcMvgtPsQ/viewform?pli=1",
@@ -22,6 +24,7 @@ const events = [
     id: 3,
     title: "NOI BootCamp",
     date: "TBD",
+    isCompleted: false,
     description:
       "A 12-week bootcamp for the top 30 students from the Nepal Olympiad in Informatics.",
     link: "k12.nplcoder.org",
@@ -42,13 +45,14 @@ const Events = () => {
             </Text>
             <Text mb={4}>{event.description}</Text>
             {event.date === "TBD" ? (
-              ""
-            ) : (
-              <Link href={event.link}>
-                <Button colorScheme="blue" size="sm">
-                  Learn More
-                </Button>
-              </Link>
+              " "
+            ) : ( " "
+              // {event.isCompleted === true ? (" "):(<Link href={event.link}>
+              //   <Button colorScheme="blue" size="sm">
+              //     Learn More
+              //   </Button>
+              // </Link>)}
+              
             )}
           </Box>
         ))}

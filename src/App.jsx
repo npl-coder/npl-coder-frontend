@@ -16,7 +16,7 @@ const App = () => {
       <BrowserRouter >
         <TransitionProvider>
           <Box>
-            <WelcomeModal/>
+            {/* <WelcomeModal/> */}
             <AnimatedRoutes />
           </Box>
         </TransitionProvider>
