@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Aayushma Sapkota",
     title: "Stanford University | CS + MS&E | QuestBridge",
     image: Ayushma,
-    linkedin: "https://np.linkedin.com/in/suraj-pathak-aa8035238",
+    linkedin: "https://www.linkedin.com/in/aayushma-sapkota/",
   },
   {
     name: "Manish Acharya",
